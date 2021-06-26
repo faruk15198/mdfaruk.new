@@ -1,0 +1,616 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding:80px 0px;
+}
+/*---------------------------this style css create for selection-----------------------------------------*/
+::selection {background:transparent;text-shadow: #ffffff 0px 0px 10px;}
+::-moz-selection {background:transparent; text-shadow:#000 0 0 2px;}
+::-webkit-selection {background:transparent; text-shadow:#000 0 0 2px;}
+::-o-selection {background:transparent; text-shadow:#000 0 0 2px;}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: linear-gradient(to top, #4400e5, #ff0099d1);
+    padding: 0;
+}
+.navbar{
+    background: transparent !important;
+}
+a.navbar-brand {
+    width: 100px;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.navbar-nav li{
+    padding:0 10px;
+
+}
+.navbar-nav li a{
+    color:#fff !important;
+    font-weight: 600;
+    float:right;
+    text-align: right;
+    transition: .4s ease;
+}
+.navbar-nav li a:hover{
+    color: #fb5200 !important;
+}
+.fa-bars{
+    color:#fff !important;
+    font-size: 30px !important;
+}
+.navbar-toggler{
+    outline: none !important;
+}
+/*-------------------------bannder css--------------------------------*/
+.col-md-6.float-md-right {
+    margin-left: 90px;
+}
+
+.col-md-4.float-md-left {
+    z-index: 1;
+}
+
+.customise-row {
+    width: 100%;
+    margin: auto;
+    padding-top: 100px;
+    z-index: 1;
+}
+
+section#banner {
+    background: linear-gradient(to top, #8500a7, #4300e6);
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+h3.promo-title {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 21px;
+}
+
+.col-md-4 p {
+    color: #8874f5;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    text-align:justify;
+
+}
+
+a.banner-btn {
+    display: inline-block;
+    border: 1px solid #8401a9;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 30px;
+    background: #4300af;
+    color: #fff;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    margin-bottom:30px;
+    transition: .5s cubic-bezier(0.42, 0, 0, 1.29);
+}
+a.banner-btn:hover{
+    background: #fff;
+    border: 1px solid #fff;
+    color: #af00ab;
+}
+a.banner-btn2 {
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    float: left;
+    background: #fff;
+    color: #8d00b6;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    transition: .5s cubic-bezier(0.42, 0, 0, 1.21);
+}
+a.banner-btn2:hover{
+    background: #4300af;
+    color:#fff;
+    border: 1px solid #4300af;
+
+}
+
+
+.banner-right-img {
+    position: absolute;
+    top: -60px;
+    transform: rotateY(9deg);
+    z-index: 1;
+}
+svg.wava-path {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    background: linear-gradient(to top, #ff0099, #6200ff00);
+}
+
+/*------------------------------------------servise css-------------------------------*/
+#services{
+    background: linear-gradient(to top, #9600b4, #000b76);
+}
+
+.servicesTitle{
+    color: #fff;
+    width: 100%;
+    position: relative;
+    margin:auto;
+    text-align:center;
+}
+.servicesTitle h1{
+   padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 50px;
+}
+.servicesTitle h1::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fb5200;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    top: 6px;
+    position: relative;
+}
+.servicesTitle h4{
+    color: #fff;
+    font-size: 20px;
+    background: #0d1888;
+    width: 230px;
+    padding: 10px;
+    border-radius: 100%;
+    margin: auto;
+    box-shadow: 0px 6px 48px #000b76;
+}
+.servicesTitle p{
+    font-size: 16px;
+    margin-bottom: 70px;
+}
+.singleBox{
+    color:#fff;
+    transition: .4s cubic-bezier(0.42, 0, 0, 1.22);
+    border-radius: 5px;
+    padding: 0;
+    margin: 30px 0px;
+    width: 100%;
+    cursor :pointer;
+    overflow: hidden;
+    background: linear-gradient(to left, #1e005978, #1a0838);
+}
+.sboxIcon{
+    width:100px;
+    height: 100px;
+    margin: 30px auto;
+    position: relative;
+    border-radius: 100%;
+}
+.sboxIcon i{
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    padding: 20px;
+    /*border: 2px solid red;*/
+    position: absolute;
+    color: #00b7fe;
+    transition: .4s ease;
+    border-radius: 100%;
+
+
+}
+.singleBox:hover{
+    transform: translateY(-15px);
+}
+.singleBox:hover .sboxIcon i{
+    transform: rotate(360deg);
+}
+.singleBox h3{
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.singleBox p{
+    width:80%;
+    margin: 9px auto;
+    font-size: 15px;
+    color: #ddd;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+
+a#servicesLearMor {
+    margin-left: 30px;
+    display: block;
+}
+.serviceBtn{
+    width: 300px;
+    margin: 40px auto;
+}
+.Btn1{
+    background: linear-gradiant(to right, red, red;)
+    display: flex;
+}
+.sicon {
+    width: 200px;
+    margin: 0px auto;
+    overflow: hidden;
+    display: block;
+    padding: 20px 0;
+}
+
+.sicon a i {
+    width: 35px;
+    height: 35px;
+    /*background: #fff;*/
+    display: grid;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    font-size: 18px;
+    margin: 7px;
+    border-radius: 100%;
+    box-shadow: 1px 2px 15px #57059a;
+    transition: .3s;
+}
+.sicon a i:hover {
+        background: #4d0696;
+        color: #fb5200;
+
+ }
+
+ /*============start the css for progress bar skills------------------------*/
+ #mySkills{
+   background: linear-gradient(to top, #1e0983, #9500b4);
+}
+ h3.text{
+    display: block;
+    font-size:20px;
+    color: #fff;
+ }
+ .progreSkiss{
+
+margin-bottom: 20px;
+height: 7px;
+background: #ddd;
+}
+.skillsTitle {
+    text-align: center;
+    margin-top: -80px;
+}
+
+.skillsTitle h1 {
+    font-size: 50px;
+    color: #e2cfef;
+    border-bottom: 3px solid #fb5200;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    display: inline-block;
+}
+ /*--------------------------start about sec hot dog css.-----------------------------------------*/
+
+section#detias-section {
+    background: linear-gradient(to top, #9f02b2, #200984);
+}
+.About-title{
+    margin-bottom: 30px
+
+}
+.About-title h1{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #fbad;
+    font-size: 50px;
+    position:relative;
+}
+.About-title h1:after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fb5200;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    top: 6px;
+    position: relative;
+
+}
+.About-title h1:before{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fb5200;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    top: 6px;
+    position: relative;
+}
+
+
+.About-title p{
+    font-size: 20px;
+    color:#aaa;
+
+}
+.about_Left{
+    margin-bottom: 20px;
+    margin-right: 50px;
+    float: left;
+}
+.About_right{
+    margin-left: 50px;
+    width: 100%;
+    overflow: hidden;
+    float: right;
+}
+.About_right h2{
+    color: #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid skyblue;
+}
+.skills_Ab{
+    width: 100%;
+    overflow:hidden;
+    column-count: 3;
+    margin-bottom: 20px;
+}
+.AboutUl{
+    float: left;
+    display: inline-block;
+}
+.AboutUl li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.AboutUl li:last-child{
+    margin-right: 0px;
+}
+.AboutUl li:nth-child(5){
+    margin-right: 0px;
+}
+.AboutUl li a{
+    color: #fb5200;
+    font-size: 18px;
+    font-weight: 400;
+}
+.About_Desc{
+    width: 100%;
+
+}
+.About_Desc p{
+    font-size: 18px;
+    color:#aaa;
+    text-align: justify;
+}
+.details_btn{
+    margin-top: 20px;
+    padding:10px;
+    border-radius:4px;
+    margin-bottom: 20px;
+    width: 200px;
+    background: #333;
+    color:#fff;
+    border:0px;
+    font-size: 18px;
+    font-weight: 600;
+    transition:0.4s ease;
+
+}
+.details_btn:hover{
+    background: #fb5200;
+}
+/*--------------------blogger section of the css style--------------------*/
+.myDesign:last-child{
+    margin-right: 0px;
+}
+#blogger{
+    background: linear-gradient(to top, #2c0889, #9d02b1);
+}
+
+.blg_wrapper{
+    width: 100%;
+    display: table;
+}
+.myDesign{
+    color:#fff;
+    transition: .4s cubic-bezier(0.42, 0, 0, 1.22);
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom:20px;
+    margin-right:50px;
+    margin-left: 50px;
+    align-items: center;
+    width: 100%;
+    cursor :pointer;
+    overflow: hidden;
+    float: left;
+    background: linear-gradient(to left, #1e005978, #1a0838);
+}
+.bloggerImg{
+    position: relative;
+}
+.bloggerImg img{
+    width: 100%;
+    height:200px;
+}
+.blgIcon{
+    width: 100%;
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+
+}
+
+.blgIcon a{
+    border:1px solid #fff;
+    margin-right: 10px;
+    float: left;
+    color: #fff;
+    transform: translateX(-250px);
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.4s ease;
+
+}
+.blgIcon a i{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.blgIcon a:first-child{
+    background: #3b5998;
+}
+.blgIcon a:nth-child(2){
+    background: #00acee;
+}
+.blgIcon a:nth-child(3){
+    background: #db4a39;
+}
+.blgIcon a:nth-child(4){
+    background: #3f729b;
+}
+
+
+.blgIcon a i:hover{
+    background: #333;
+}
+.blogDesc{
+    padding:20px;
+}
+.myDesign:hover .blgIcon a{
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+    text-decoration: none;
+}
+.blogDesc h3{
+    color:#ddd;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.blogDesc p{
+    color:#999;
+    text-align: justify;
+}
+.BlgLearnMore{
+    display:table;
+    background: transparent;
+    color: #fb5200;
+    margin: 10px 0px;
+
+
+}
+.moreBlog{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: #fb5200;
+    margin: 50px auto;
+    width: 200px;
+    border:0px;
+    color:#fff;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: .3s;
+    border-bottom: 3px solid #fb5200;
+    border-top: 3px solid #fb5200;
+}
+.moreBlog:hover{
+    background: #fff;
+    color:#fb5200;
+    font-family: arial;
+    text-decoration: none;
+    border-bottom: 3px solid #fb5200;
+    border-top: 3px solid #fb5200;
+}
+section#testimonials {
+    background: linear-gradient(to top, #bc01a7, #2d0889);
+}
+.testiDesc {
+    background: linear-gradient(to left, #1e00594d, #04083494);
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    position: relative;
+    top: 32px;
+    margin-bottom: 20px;
+}
+
+.testiImage {
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    border-radius: 100%;
+}
+
+.singleTestimonial {
+    position: relative;
+}
+
+.testiDesc h1 {
+    padding-top: 12px;
+    margin-bottom: 20px;
+    color: #ddd;
+    font-size: 30px;
+    border-bottom: 2px solid;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.testiDesc p {
+    font-size: 20px;
+}
